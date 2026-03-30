@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-layout">
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-clipboard-check"></i>
+          <span>Task Manager</span>
+        </div>
+        <nav class="menu">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-house"></i> All Tasks
+          </button>
+          <button class="filter-btn" data-filter="completed">
+            <i class="fa-solid fa-check-double"></i> Completed
+          </button>
+          <button class="filter-btn" data-filter="incomplete">
+            <i class="fa-solid fa-clock"></i> Incomplete
+          </button>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header>
+          <h1>My To-Do List</h1>
+          <p id="date-display"></p>
+        </header>
+
+        <div class="input-section">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Add a new task here..."
+          />
+          <button id="add-btn">Add Item</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+      </main>
+    </div>
+
+    <div id="simple-toast" class="toast-hidden">Update Successful!</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
