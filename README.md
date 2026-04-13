@@ -6,8 +6,7 @@ TaskFlow is a sleek, professional-grade To-Do application designed for high-prod
 
 ### 🌐 Live Demo
 You can explore the live version of this project here:
-👉 **[Click here to View Live Project]((https://hs5042708-web.github.io/Task-Manager/)**
-
+👉 [Click here to View Live Project](https://hs5042708-web.github.io/Task-Manager/)
 ---
 
 ### ✨ Key Features
