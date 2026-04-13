@@ -17,6 +17,7 @@
           <i class="fa-solid fa-clipboard-check"></i>
           <span>Task Manager</span>
         </div>
+
         <nav class="menu">
           <button class="filter-btn active" data-filter="all">
             <i class="fa-solid fa-house"></i> All Tasks
@@ -27,7 +28,89 @@
           <button class="filter-btn" data-filter="incomplete">
             <i class="fa-solid fa-clock"></i> Incomplete
           </button>
+          <button class="filter-btn" data-filter="in-progress">
+            <i class="fa-solid fa-spinner fa-spin-pulse"></i> In Progress
+          </button>
         </nav>
+
+        <hr style="border: 0.5px solid #444; margin: 20px 0" />
+
+        <div class="custom-lists">
+          <h3
+            style="
+              color: #888;
+              font-size: 12px;
+              text-transform: uppercase;
+              padding-left: 20px;
+              margin-bottom: 10px;
+            "
+          >
+            My Lists
+          </h3>
+          <nav class="category-list" id="category-list">
+            <button class="filter-btn category-btn" data-category="Work">
+              <span class="category-info">
+                <span class="aesthetic-icon">📄</span> Work
+              </span>
+              <i
+                class="fa-solid fa-trash-can delete-category-btn"
+                title="Delete List"
+              ></i>
+            </button>
+
+            <button class="filter-btn category-btn" data-category="Shopping">
+              <span class="category-info">
+                <span class="aesthetic-icon">🛍️</span> Shopping
+              </span>
+              <i
+                class="fa-solid fa-trash-can delete-category-btn"
+                title="Delete List"
+              ></i>
+            </button>
+
+            <button class="filter-btn category-btn" data-category="Personal">
+              <span class="category-info">
+                <span class="aesthetic-icon">🎀</span> Personal
+              </span>
+              <i
+                class="fa-solid fa-trash-can delete-category-btn"
+                title="Delete List"
+              ></i>
+            </button>
+          </nav>
+
+          <div
+            class="add-category-input"
+            style="padding: 10px 20px; display: flex; gap: 5px"
+          >
+            <input
+              type="text"
+              id="new-category-name"
+              placeholder="New List..."
+              style="
+                background: #2c3e50;
+                border: 1px solid #444;
+                color: white;
+                border-radius: 4px;
+                padding: 5px;
+                width: 100%;
+              "
+            />
+            <button
+              id="add-category-btn"
+              style="
+                background: #3498db;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                padding: 5px 10px;
+                cursor: pointer;
+              "
+            >
+              +
+            </button>
+          </div>
+        </div>
       </aside>
 
       <main class="content">
