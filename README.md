@@ -39,4 +39,4 @@ You can explore the live version of this project here:
 ---
 
 ### 👩‍💻 Developer
-**Haleema Sadia** *Front-End Developer Intern* > "Turning complex problems into elegant, functional code."
+**Haleema Sadia** *Front-End Developer * > "Turning complex problems into elegant, functional code."
